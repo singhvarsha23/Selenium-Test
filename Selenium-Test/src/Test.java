@@ -5,4 +5,5 @@ public class Test {
 
 
 	FirefoxDriver fd = new FirefoxDriver();
+	fd.get("http://www.gmail.com");
 }

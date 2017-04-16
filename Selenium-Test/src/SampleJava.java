@@ -9,11 +9,14 @@ public class SampleJava {
 	
 	
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		//Gecko driver is for firefox
+		
+		//Gecko driver is for firefox. Drivers can be downloaded from seleniumhq.org
+		
+		
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\VARSHA SINGH\\workspace-luna\\Driver\\geckodriver.exe");
 		FirefoxDriver fd = new FirefoxDriver();
-		//fd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		fd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		fd.get("http://www.gmail.com");
 		
